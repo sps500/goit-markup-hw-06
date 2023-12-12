@@ -470,21 +470,24 @@ letter-spacing: 0.02em;
    
     bottom: -1px; 
   }
+
+
 }
 
 
 /* <!----------- section_one --------> */
 .section-one {
   background-color: #2e2f42;
-  padding: 188px 0;
-  margin-top: 0;
+  padding: 72px 0;
+  
+  height: 432px;
+  flex-shrink: 0;
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/Dark-bg-mobail.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
-  max-width: 428px;
 margin: 0 auto;
 background-position: center; 
 }
@@ -512,20 +515,28 @@ screen and (min-device-pixel-ration: 2dppx) and (min-width: 1158px) {
 
 .container_centre {
   text-align: center;
+  width: 288px
+}
+@media  only screen (max-width: 765px) {
+  .section-one-head {
+    font-size: 36px;
+    line-height: 1.11; /* 107.143% */
+  }
 }
 .section-one-head {
-  font-size: 56px;
-  line-height: 1.07; /* 107.143% */
+  
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  /* padding-top: 188px; */
+  width: 169px;
+
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
-  max-width: 496px;
+  /* max-width: 288px; */
 }
 /* Button Text */
 .button-style {
@@ -538,8 +549,7 @@ screen and (min-device-pixel-ration: 2dppx) and (min-width: 1158px) {
   cursor: pointer;
   min-width: 169px;
   padding: 16px 32px;
-  margin-bottom: 188px;
-  margin-top: 48px;
+ 
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
@@ -560,4 +570,60 @@ screen and (min-device-pixel-ration: 2dppx) and (min-width: 1158px) {
 }
 .button-style:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .section-one {
+    background-color: #2e2f42;
+    padding: 112px 0;
+    
+    min-width: 768px;
+    height: 436px;
+  
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  margin: 0 auto;
+  background-position: center; 
+  }
+.section-one-head {
+  font-size: 56px;
+  line-height: 1.07; /* 107.143% */
+
+  width: 496px;
+ 
+  margin-bottom: 36px;
+}
+.container_centre {
+ 
+min-width: 768px;
+}
+}
+@media screen and (min-width: 1158px) {
+  .container_centre {
+ 
+   min-width: 496px;
+    }
+    .section-one-head {
+      width: 496px;
+      font-size: 56px;
+      line-height: 1.07; 
+      margin-bottom: 48px;
+    }
+    .section-one {
+      background-color: #2e2f42;
+      padding: 188px 0;
+      margin-top: 0;
+    
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 600px;
+      max-width: 1440px;
+    margin: 0 auto;
+    background-position: center; 
+    }
 }
